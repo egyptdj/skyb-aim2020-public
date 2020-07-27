@@ -205,7 +205,7 @@ def count_parameters(model):
 ### Baseline PyNet model is implemented but not used ###
 # class PyNet(nn.Module):
 #     def __init__(self, in_channels=4, out_channels=3, hidden_channels=16, instance_norm=True, channel_attention=True):
-#         super(PyNetModel, self).__init__()
+#         super(PyNet, self).__init__()
 #         self.level0_up1 = nn.Sequential(nn.Upsample(scale_factor=2, mode='bilinear', align_corners=True), nn.Conv2d(hidden_channels*2, hidden_channels, 3, padding=3//2, padding_mode='reflect'), nn.LeakyReLU(0.2))
 #         self.level0_conv1 = nn.Conv2d(hidden_channels, out_channels, 3, padding=3//2, padding_mode='reflect')
 #
