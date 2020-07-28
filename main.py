@@ -180,7 +180,7 @@ def main():
     if args.test_dir is not None:
         assert os.path.isdir(args.test_dir), 'path to the test images not found'
         # set path
-        test_target_dir = args.test_dir+'_enhanced'
+        test_target_dir = os.path.dirname(args.test_dir)+'_enhanced'
         os.makedirs(test_target_dir)
         raw_list = os.listdir(args.test_dir)
         raw_list.sort()
