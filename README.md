@@ -1,5 +1,9 @@
 # Team *skyb* solution for the AIM2020 mobile image signal processing challenge
 
+## Publication
+[PyNET-CA: Enhanced PyNET with Channel Attention for End-to-End Mobile Image Signal Processing](https://link.springer.com/chapter/10.1007/978-3-030-67070-2_12)\
+Byung-Hoon Kim, Joonyoung Song, Jong Chul Ye, JaeHyun Baek\
+ECCV 2020 Workshops - Advances in Image Manipulation (AIM)
 
 ## How-to
 Reproduce the final results:
@@ -31,12 +35,15 @@ Train from scratch:
 
 
 ## Requirements
+*Note: inferring with the pretrained model may not reproduce sufficient results with pytorch version over 1.4.0*
+
 - python 3.6
-- pytorch >= 1.5.0
+- pytorch >= 1.4.0
 - tensorboard
 - pytorch-msssim
 - IQA-pytorch
 - tqdm
+
 
 
 ## Concept
@@ -45,6 +52,17 @@ PyNet-CA: Enhanced [PyNet](http://people.ee.ethz.ch/~ihnatova/pynet.html) with C
 ![concept](./concept.png)
 
 
+## Cite
+@inproceedings\
+{\
+  title={PyNET-CA: enhanced PyNET with channel attention for end-to-end mobile image signal processing},\
+  author={Kim, Byung-Hoon and Song, Joonyoung and Ye, Jong Chul and Baek, JaeHyun},\
+  booktitle={European Conference on Computer Vision},\
+  pages={202--212},\
+  year={2020},\
+  organization={Springer}\
+}
+
 
 ## Contact
-<egyptdj@kaist.ac.kr>
+<egyptdj@yonsei.ac.kr>
