@@ -73,8 +73,8 @@ def main():
                 writer.writerows(vars(args).items())
 
         # set dataset
-        train_dataset = DatasetMISP(args.source_dir)
-        validation_dataset = DatasetMISP(args.source_dir, split='test')
+        train_dataset = DatasetZRR(args.source_dir)
+        validation_dataset = DatasetZRR(args.source_dir, split='test')
 
         # set session
         session = PyNetSession(model, args.perceptual)
@@ -180,7 +180,7 @@ def main():
     if args.test_dir is not None:
         assert os.path.isdir(args.test_dir), 'path to the test images not found'
         # set path
-        test_target_dir = os.path.dirname(args.test_dir)+'_enhanced'
+        test_target_dir = os.path.abspath(args.test_dir)+'_enhanced'
         os.makedirs(test_target_dir)
         raw_list = os.listdir(args.test_dir)
         raw_list.sort()
